@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class SeleniumDriver
 {
     private WebDriver _driver;
@@ -11,9 +12,9 @@ public class SeleniumDriver
 
     public WebDriver getDriver() {
         if (_driver == null) {
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dmitriy\\IdeaProjects\\AutoTest1_jdk\\src\\test\\utils\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "D:\\DOC\\JavaProgs\\AutoTest1_jdk\\src\\test\\utils\\chromedriver.exe");
             _driver = new ChromeDriver();
-             wait = new WebDriverWait(_driver, 10);
+            wait = new WebDriverWait(_driver, 10);
             _driver.manage().deleteAllCookies();
             _driver.get("http://automationpractice.com/index.php");
         }
