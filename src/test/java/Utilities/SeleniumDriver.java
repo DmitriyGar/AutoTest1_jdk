@@ -12,7 +12,7 @@ public class SeleniumDriver
 
     public WebDriver getDriver() {
         if (_driver == null) {
-            System.setProperty("webdriver.chrome.driver", "D:\\DOC\\JavaProgs\\AutoTest1_jdk\\src\\test\\utils\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", ".\\src\\test\\utils\\chromedriver.exe");
             _driver = new ChromeDriver();
             wait = new WebDriverWait(_driver, 10);
             _driver.manage().deleteAllCookies();
